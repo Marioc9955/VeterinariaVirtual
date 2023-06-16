@@ -81,7 +81,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Universidad Central del Ecuador",
         productName: "MetaBones",
-        productVersion: "1.0",
+        productVersion: "1.1",
         showBanner: unityShowBanner,
       };
 
@@ -122,7 +122,7 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
-		  window.unityInstance = unityInstance;
+		 window.unityInstance = unityInstance;
           loadingBar.style.display = "none";
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
